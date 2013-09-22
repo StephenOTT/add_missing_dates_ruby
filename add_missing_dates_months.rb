@@ -29,11 +29,12 @@ class DateManipulate
 	def addMissingMonths (datesHash)
 		count = 0
 		result = {}
+		lastKey = datesHash.keys.last
 
 		datesHash.keys.each do |x|
-			if x != datesHash.keys.last
-				(x+1.month).upto(datesHash.keys[count+1]-1.month) do |a|
-				    result[a.at_beginning_of_month] = 0
+			if x != lastKey
+				(x.next_month(1)).upto(datesHash.keys[count + 1].prev_month(1)) do |a|
+				    result[a.beginning_of_month] = 0
 				end
 			end
 
