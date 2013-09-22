@@ -1,6 +1,5 @@
 require 'date'
-require 'groupdate'
-require 'pp'
+require 'active_support/core_ext'
 
 class DateManipulate
 	
