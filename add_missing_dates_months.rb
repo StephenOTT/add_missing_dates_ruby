@@ -40,6 +40,11 @@ class DateManipulate
 
 			count += 1
 		end
+		
+		#for use when not working with Hashes but working with Arrays:
+		# puts result.uniq.to_s
+		# The uniq removes all of the extra duplicate values.
+
 		mergedHash = result.merge!(datesHash)
 		self.simpleHashSort(mergedHash)
 
