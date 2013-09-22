@@ -49,6 +49,8 @@ class DateManipulate
 		self.simpleHashSort(mergedHash)
 
 		# return result.merge!(datesHash)
+	end
+
 	def simpleHashSort (hash)
 		sortedDates = hash.keys.sort
 		sortedHash = {}
