@@ -70,7 +70,7 @@ class DateManipulate
 			sortedHash[y] = hash[y]
 		end
 
-		puts sortedHash
+		#puts sortedHash
 		return sortedHash
 	end
 end
