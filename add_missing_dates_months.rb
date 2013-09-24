@@ -2,10 +2,6 @@ require 'date'
 require 'active_support/core_ext'
 
 class DateManipulate
-	
-	def initialize (hash)
-		self.sortHash(hash)
-	end
 
 	def sortHash (hash)
 		dateFormatChangeHash = {}
