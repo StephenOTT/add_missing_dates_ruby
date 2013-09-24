@@ -22,6 +22,21 @@ class DateManipulate
 		# return sortedHash
 	end
 
+	def sortHashPlain (hash)
+
+		dateFormatChangeHash = {}
+
+		sortedDates = hash.keys.sort
+		sortedHash = {}
+
+		sortedDates.each do |y|
+			sortedHash[y] = hash[y]
+		end
+
+		self.addMissingMonths(sortedHash)
+
+	end
+
 	def addMissingMonths (datesHash)
 		count = 0
 		result = {}
